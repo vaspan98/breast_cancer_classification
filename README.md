@@ -20,11 +20,9 @@ We use the [Breast Cancer Wisconsin (Original) Data Set](https://archive.ics.uci
 10. Mitoses: 1 - 10
 11. Class: (2 for benign, 4 for malignant)
 
-## Description / Goals
+**Data Preprocessing:**
 
-
-
-We observe that the `Bare Nuclei` column has some fields completed with the `?` symbol, which represents an unknow value. In order to execute our Classification task we have to replace all the `?` of the `Bare Nuclei` column with a value in the range 1-10 to complete our dataset. We choose to replace all the `?` with `1` because it is the dominant value of the current column. As a result, it is more possible to have more occurancies of `1` in this column than any other value. <br>
+We observe that the `Bare Nuclei` column has some fields completed with the `?` symbol, which represents an unknow value. In order to execute our Classification task we have to replace all the `?` of this column with a value in the range 1-10 to complete our dataset. We choose to replace all the `?` with `1` because it is the dominant value of the current column. As a result, the `Bare Nuclei` column is highly possible to have more occurancies of the value `1` than any other values in the range 1-10. <br>
 The fixed dataset is uploaded in the current github repository.
 
 ## Classification Algorithms
@@ -32,6 +30,9 @@ The fixed dataset is uploaded in the current github repository.
 * Naive Bayes
 * Support Vector Machines
 * Decision Trees
+
+## Description / Goals
+The purpose of this project is the exploration of the most famous Classification Algorithms from the perspective of the Matlab programming language and check their efficiency on a simple yet significant task like the brest cancer classification. We execute each Classifier with different parametres and methods and we evaluate them using the **Accuracy**, **Sensitivity** and **Specificity** metrics, after applying 10-fold Cross Validation.
 
 ## 10-fold Cross Validation Results
 
@@ -62,6 +63,3 @@ The fixed dataset is uploaded in the current github repository.
 
 ## Author
 Vassilis Panagakis
-
-## Date
-June 2019
