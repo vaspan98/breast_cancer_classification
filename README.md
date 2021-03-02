@@ -1,7 +1,7 @@
 # breast_cancer_classification
 Breast cancer classification on original Wisconsin dataset using 10-fold Cross Validation.
 
-## Language
+## Programming Language
 Matlab
 
 ## Dataset
