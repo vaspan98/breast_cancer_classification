@@ -1,5 +1,5 @@
 # breast_cancer_classification
-Breast cancer classification on original Wiscnsin dataset using 10-fold Cross Validation.
+Breast cancer classification on original Wisconsin dataset using 10-fold Cross Validation.
 
 ## Language
 Matlab
@@ -10,38 +10,26 @@ In order to achieve that we use a smaller part of the [SQuAD 2.0 dataset](https:
 
 ## 10-fold Cross Validation Results
 
-<p align="center">
-<b>k-Nearest Neighbors</b>
-</p>
-
+### k-Nearest Neighbors
 | Method | Accuracy | Sensitivity | Specificity |	
 | --- | :---: | :---: | :---: | 
 | 5-Nearest Neighbors | 0.964235 | 0.971616 | 0.950207 |
 | 10-Nearest Neighbors | 0.969957 | 0.978166 | 0.954357 |
 | 100-Nearest Neighbors | 0.952790 | 0.980349 |0.900415 | 
 
-<p align="center">
-<b>Naive Bayes</b>
-</p>
-
+### Naive Bayes
 | Method | Accuracy | Sensitivity | Specificity |	
 | --- | :---: | :---: | :---: | 
 | Gaussian Distribution | 0.961373 | 0.951965 | 0.979253 |
 | Kernel Smoothing Density | 0.964235 | 0.971616 | 0.950207 |
 
-<p align="center">
-<b>Support Vector Machines</b>
-</p>
-
+### Support Vector Machines
 | Method | Accuracy | Sensitivity | Specificity |	
 | --- | :---: | :---: | :---: | 
 | Linear Kernel | 0.967096	| 0.971616 | 0.958506 |
 | Gaussian kernel | 0.968526 | 0.967249 | 0.970954 |
 
-<p align="center">
-<b>Decision Trees</b>
-</p>
-
+### Decision Trees
 | Method | Accuracy | Sensitivity | Specificity |	
 | --- | :---: | :---: | :---: | 
 | Exact Search | 0.949928 | 0.965066 | 	0.921162 |
