@@ -4,9 +4,34 @@ Breast cancer classification on original Wisconsin dataset using 10-fold Cross V
 ## Language
 Matlab
 
+## Dataset
+We use the [Breast Cancer Wisconsin (Original) Data Set](https://archive.ics.uci.edu/ml/datasets/breast+cancer+wisconsin+(original)) by UC Irvine Machine Learning Repository and more specifically the `breast-cancer-wisconsin.data` DATA file.
+
+**Attribute Information:**
+1. Sample code number: id number
+2. Clump Thickness: 1 - 10
+3. Uniformity of Cell Size: 1 - 10
+4. Uniformity of Cell Shape: 1 - 10
+5. Marginal Adhesion: 1 - 10
+6. Single Epithelial Cell Size: 1 - 10
+7. Bare Nuclei: 1 - 10
+8. Bland Chromatin: 1 - 10
+9. Normal Nucleoli: 1 - 10
+10. Mitoses: 1 - 10
+11. Class: (2 for benign, 4 for malignant)
+
 ## Description / Goals
-The purpose of this project is to develop a simpler and lighter version of the official Hugging face example [Fine-tuning a model on a question-answering task](https://github.com/huggingface/notebooks/blob/master/examples/question_answering.ipynb) where `distilbert-base-uncased` is trained on the SQuAD dataset.
-In order to achieve that we use a smaller part of the [SQuAD 2.0 dataset](https://rajpurkar.github.io/SQuAD-explorer/) (86821 samples of the `train-v2.0.json` dataset and 10388 samples of the `dev-v2.0.json` dataset)  on which we fine-tune the `bert-base-uncased` model. 
+
+
+
+We observe that the `Bare Nuclei` column has some fields completed with the `?` symbol, which represents an unknow value. In order to execute our Classification task we have to replace all the `?` of the `Bare Nuclei` column with a value in the range 1-10 to complete our dataset. We choose to replace all the `?` with `1` because it is the dominant value of the current column. As a result, it is more possible to have more occurancies of `1` in this column than any other value. <br>
+The fixed dataset is uploaded in the current github repository.
+
+## Classification Algorithms
+* k-Nearest Neighbors
+* Naive Bayes
+* Support Vector Machines
+* Decision Trees
 
 ## 10-fold Cross Validation Results
 
